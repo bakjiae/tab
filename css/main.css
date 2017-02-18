@@ -1,0 +1,39 @@
+@charset "UTF-8";
+body {
+    background: black;
+}
+.container {
+    margin: 30px;
+}
+.tab_menu li {
+    padding: 10px 16px;
+    background: white;
+    border-bottom: 2px solid black;
+    float: left;
+    margin-right: 2px;
+    color: #F0141E;
+    font-weight: bold;
+    cursor: pointer;
+}
+.tab_menu li:last-child {
+    margin-right: 0;
+}
+.tab_menu li.active {
+    background: #F0141E;
+    border-bottom: 2px solid #F0141E;
+    color: white;
+}
+.tab_contents {
+    width: 724px;
+    height: 377px;
+    background: black;
+    border: 10px solid red;
+    margin-bottom: 20px;
+}
+.tab_contents li {
+    position: absolute;
+    display: none;
+}
+.tab_contents li.active {
+    display: block;
+}
